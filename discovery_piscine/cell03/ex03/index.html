@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+        <style>
+
+            body {
+                margin: 0;
+                overflow: hidden;
+            }
+            #ft_list {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            }
+            .todo-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            }
+            .todo-item:last-child {
+            border-bottom: none;
+            }
+            .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            }
+            #new_todo {
+                width: 100px;
+                background-color: green;
+                color: white;
+                height: 50px;
+                border: none;
+                border-radius: 50px;
+                margin-top: 30px;
+                width: 200px;
+                font-size: 13px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TO DO List</h1>
+        <div id="ft_list"></div>
+        <button id="new_todo">Aggiungi testo</button>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

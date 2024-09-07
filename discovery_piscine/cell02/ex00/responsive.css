@@ -1,0 +1,16 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+table {
+    width: 100%;
+}

@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.calc-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.operand {
+    width: 120px;
+}
+
+#submit{
+    background-color: green;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+}

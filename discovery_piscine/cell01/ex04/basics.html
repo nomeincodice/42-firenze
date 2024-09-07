@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+
+<style>
+
+    body {
+        background-color: lightpink;
+    }
+
+    .h1-center {
+        text-align: center;
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .columns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .image {
+        width: 500px;
+        height: auto;
+        padding: 10px;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .button {
+        background-color: white;
+        color: pink;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .line {
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .footer {
+        text-align: end;
+        font-family: 'Courier New', Courier, monospace;
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <section style="width: 100vw">
+
+        <h1 class="h1-center"> The best e-commerces! </h1>
+
+        <div class="columns">
+        
+
+            <div class="column">
+                <img src="boggi.png" alt="screenshot homepage boggi" class="image">
+                <a href="https://www.boggi.com/"  target="_blank" class="button">Scopri il nostro e-commerce</a>
+            </div>
+
+            <div class="column">
+                <img src="velasca.png" alt="screenshot homepage velasca" class="image">
+                <a href="https://it.velasca.com/"  target="_blank" class="button">Scopri il nostro e-commerce</a>
+            </div>
+        </div>
+
+        <hr class="line" noshade>
+        
+        <div class="footer">
+            <p> © fjunior- 2024</p>
+        </div>
+    
+    </section>
+    
+</body>
+
+
+</html>

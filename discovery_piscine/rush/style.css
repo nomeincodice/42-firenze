@@ -1,0 +1,259 @@
+body, html {
+  color:#1d1d1d; 
+  font-family: Helvetica, Arial, sans-serif; 
+  line-height: 1.5; 
+  font-size: 16px; 
+  margin: 0;
+  padding: 0;
+  cursor: ;
+  transition: all 0.5s ease-in-out;
+}
+
+a {text-decoration: none;}
+ * {cursor: }
+
+ @media only screen and (max-width: 1366px) { /* Computer */
+   
+  .image-home { width: 80%;}
+}
+
+@media only screen and (max-width: 915px) { /* iPad pro */
+  
+  .image-home { width: 100%;}
+  .cursor, .outline{display: none;}
+}
+
+@media (max-width: 768px) { /* iPad Mini */
+
+  .cursor, .outline{display: none;}
+
+}
+
+.outline {
+  width: 64px;
+  height: 64px;
+  mix-blend-mode: difference;
+  border-radius: 100%;
+  border: 1px solid #c7ba00;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  position: fixed;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  z-index: 999999;
+  transform: translate( -64px, -64px );
+  
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #c7ba00;
+  opacity: .8;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate( 50vw, -100px );
+}
+
+.outline.hover{    
+  width: 128px;
+  height: 128px;
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+.outline.hover::after{
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://alien.haldenvgs.net/images/cursor.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cursor.hover{
+  opacity: 0;
+}
+
+.container {
+  background-color: #000000;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 30px;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+}
+.nav-link {
+  color: white;
+  border-right: 1px;
+  border-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.navbar .container-menu {
+justify-content: center;
+gap: 20px;
+border-radius: 40px;
+padding: 10px;
+position: fixed;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+
+}
+
+
+.image-home {
+  width: 42%;
+  height: auto;
+
+}
+
+.title {
+  font-size: 170px;
+  position: absolute;
+  left: 36%;
+  top: 40%;
+  transform: translateY(-50%) translateX(-50%);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.title-cv {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: start;
+  color: white;
+  
+}
+
+
+.social-icons {
+  width: 30px;
+  color: white;
+}
+
+.social-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
+
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  width: 50%;
+  margin-right: 100px;
+  gap: 0px;
+
+}
+
+
+.right-column img {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: white;
+
+}
+
+.footer {
+  width: 100%;
+  font-size: large;
+  padding-bottom: 60px;
+  text-align: center;
+  text-decoration: wavy;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3b3939;
+  color: white;
+}
+
+.footerimg {
+  height:40px;
+  justify-content: center;
+  width: 40px;
+  margin: 10px;
+  display: flex; 
+  flex-direction: row;
+  
+}
+
+p {
+  margin: 5px;
+}
+h3 {
+
+  font-family:cursive;
+}
+
+.container-cv {
+  display: flex;
+ 
+}
+
+.profile {
+  background-color: #e9e9e9;
+  padding: 30px;
+  box-shadow: #000000;
+  box-shadow: 10px 20px 30px 5px rgb(167, 167, 167);
+  filter: blur();
+  width: 100%;
+  float: none;
+}
+
+.column1 {
+  flex: 1;
+  padding: 100px;
+}

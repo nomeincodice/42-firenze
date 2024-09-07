@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calcoliamo qualcosa</h1>
+            <div class="calc-container">
+                <input type="number" id="left-operand" placeholder="Left operand" class="operand">
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+
+                    <input type="number" id="right-operand" placeholder="Right operand" class="operand">
+                    
+                    <input type="submit" id="submit" value="Try me!">
+            </div>
+    </div>
+
+        <script src="calc.js"></script>
+</body>
+</html>
