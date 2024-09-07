@@ -1,2 +1,2 @@
-# 42-firenze
-Tutti i miei lavori
+# File contenente il mio percorso di studi in 42 Firenze
+
